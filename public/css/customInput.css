@@ -1,0 +1,175 @@
+/*====================================================
+CSS for customized radio buttons and check boxes START
+====================================================*/
+.custom-radio {
+    position: relative;
+    margin:0;
+}
+
+.custom-radio input {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    margin: 0;
+    z-index: 0;
+    float:left;
+    opacity:0 !important;
+    display:none;
+}
+
+.custom-radio label {
+    display: block;
+    position: relative;
+    z-index: 1;
+    padding-right: 1em;
+    line-height: 1;
+    cursor: pointer;
+    display:inline-block;
+}
+
+.custom-radio label {
+    background:url(../images/check.png) no-repeat;
+    font-family: 'ProximaNova-Regular';
+    font-size:20px; color:#464547;
+    margin: 0 auto; padding:0 0 0 33px;
+    background-position:0 0;
+}
+
+.custom-radio label.checked {
+    background:url(../images/checked.png) no-repeat;
+    background-position:0px;
+}
+
+.custom-checkbox label {
+    background:url(../images/check1.png) no-repeat center center;
+    background-position:0 0;
+    font-family: 'ProximaNova-Regular';
+    font-size:14px; color:#4d4d4d;
+}
+
+.custom-checkbox label.checked {
+    background:url(../images/checked1.png) no-repeat;
+    background-position:0 0px;
+}
+
+.custom-checkbox input {
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    margin: 0;
+    z-index: 0;
+    float:left;
+    display:none;
+}
+
+.custom-checkbox label {
+    display: block;
+    position: relative;
+    z-index: 1;
+    padding-right: 1em;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.custom-checkbox {
+    position: relative;
+}
+
+/*===================================================
+CSS for customized radio buttons and check boxes END
+===================================================*/
+
+/*==========================
+CSS for floating label START
+==========================*/
+
+
+.field {
+    display: flex;
+    flex-flow: column-reverse;
+    margin-bottom: 2em;
+    width: 100%;
+}
+
+label, input {
+    transition: all 0.2s;
+    touch-action: manipulation;
+    text-align: ce;
+    padding: 0 0 11px 0;
+    color:#302f32;
+}
+
+input {
+    font-size: 1.5em;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    font-family: 'ProximaNova-Regular', sans-serif;
+    -webkit-appearance: none;
+    border-radius: 0;
+    padding: 0;
+    cursor: text;
+}
+
+input:focus {
+    outline: 0;
+    border-bottom: 1px solid #666;
+}
+
+label {
+    /*text-transform: uppercase;*/
+    letter-spacing: 0.05em;
+    text-align: left;
+}
+
+/*
+* Translate down and scale the label up to cover the placeholder,
+* when following an input (with placeholder-shown support).
+* Also make sure the label is only on one row, at max 2/3rds of the
+* field—to make sure it scales properly and doesn't wrap.
+ */
+
+input:placeholder-shown + label {
+    cursor: text;
+    max-width: 66.66%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transform-origin: left bottom;
+    transform: translate(0, 2.125rem) scale(1.5);
+}
+
+
+/**
+* By default, the placeholder should be transparent. Also, it should
+* inherit the transition.
+*/
+
+::-webkit-input-placeholder {
+    opacity: 0;
+    transition: inherit;
+    font-size: 15px;
+}
+
+/**
+* Show the placeholder when the input is focused.
+*/
+
+input:focus::-webkit-input-placeholder {
+    opacity: 1;
+}
+/**
+* When the element is focused, remove the label transform.
+* Also, do this when the placeholder is _not_ shown, i.e. when
+* there's something in the input at all.
+*/
+
+input:not(:placeholder-shown) + label,
+input:focus + label {
+    transform: translate(0, 0) scale(1);
+    cursor: pointer;
+    color: #03a9f4;
+    font-size: 24px;
+}
+/*==========================
+CSS for floating label ENDS
+==========================*/
