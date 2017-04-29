@@ -23,11 +23,18 @@ class IndexesController extends Controller
      */
     public function create()
     {
-        if (request('Submit') == 'Male') {
-            return redirect('/application/borrower');
-        }
-        else {
-            return redirect('/application/borrower');
+        switch (request('Submit')) {
+            case "Login":
+                return redirect('/application/borrower');
+                break;
+            case "Create New Account":
+                return redirect('/authentication');
+                break;
+            case "Authentication":
+                return redirect('/login');
+                break;
+            default:
+                return redirect('/');
         }
     }
 

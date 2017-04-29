@@ -3,42 +3,37 @@
 @include('common.statusbar')
 
 
-<div class="progress_block step1">
+<div class="progress_block step3">
     @include('application.progress')
 </div>
 
-<!--Need to update <form>: IF exist then "method=get(edit)" else "method=post" ENDIF-->
-<form class="form_block" method="get" action="/application/loanamount">
+<form class="form_block" method="post" action="/application/occupancytype">
     {{ csrf_field() }}
-    <h3 class="text-center">occupancy type</h3>
-
-    <p></p>
 
     <div class="container">
+        <h3 class="text-center">occupancy type</h3>
+        <p></p>
         <div class="row">
             <div class="col">
                 <ul>
                     <li>
-                        <a><span>
-                                <input type="image" src="/images/OccupancyType_Primary.png"
-                                       width="190" height="190" alt="Submit"
-                                       value="Primary" name="Submit">
+                        <a><span><input type="image" src="/images/OccupancyType_Primary.png"
+                            width="190" height="190" alt="Submit"
+                            value="Primary" name="Submit">
                             </span><small>primary</small></a>
                     </li>
 
                     <li>
-                        <a><span>
-                                <input type="image" src="/images/OccupancyType_Secondary.png"
-                                       width="190" height="190" alt="Submit"
-                                       value="Secondary" name="Submit">
+                        <a><span><input type="image" src="/images/OccupancyType_Secondary.png"
+                            width="190" height="190" alt="Submit"
+                            value="Secondary" name="Submit">
                             </span><small>secondary</small></a>
                     </li>
 
                     <li>
-                        <a><span>
-                                <input type="image" src="/images/OccupancyType_Investment.png"
-                                       width="190" height="190" alt="Submit"
-                                       value="Investment" name="Submit">
+                        <a><span><input type="image" src="/images/OccupancyType_Investment.png"
+                            width="190" height="190" alt="Submit"
+                            value="Investment" name="Submit">
                             </span><small>investment</small></a>
                     </li>
                 </ul>
@@ -50,3 +45,4 @@
 </form>
 
 @include('common.footer')
+

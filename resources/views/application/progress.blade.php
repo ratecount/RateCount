@@ -1,24 +1,24 @@
 <div class="container">
     <div class="progress_block_in">
         <ul>
-            <li class="item1"><a href="#"><span><i class="fa fa-user"></i></span></a>
-                <h4>borrower</h4>
+            <li class="item1"><a href="/application/estimatecreditscore"><span><i class="fa fa-tachometer"></i></span></a>
+                <h4>credit score</h4>
             </li>
 
-            <li class="item2"><a href="#"><span><i class="fa fa-heart"></i></span></a>
-                <h4>marital status</h4>
+            <li class="item2"><a href="/application/propertytype"><span><i class="fa fa-home"></i></span></a>
+                <h4>property type</h4>
             </li>
 
-            <li class="item3"><a href="#"><span><i class="fa fa-child"></i></span></a>
-                <h4>dependent</h4>
+            <li class="item3"><a href="/application/occupancytype"><span><i class="fa fa-map-marker"></i></span></a>
+                <h4>occupancy type</h4>
             </li>
 
-            <li class="item4"><a href="#"><span><i class="fa fa-globe"></i></span></a>
-                <h4>demographic</h4>
+            <li class="item4"><a href="/application/loanamount"><span><i class="fa fa-usd"></i></span></a>
+                <h4>loan amount</h4>
             </li>
 
-            <li class="item5"><a href="#"><span><i class="fa fa-users"></i></span></a>
-                <h4>add co-borrower</h4>
+            <li class="item5"><a href="/application/ratesheet"><span><i class="fa fa-sort-amount-desc"></i></span></a>
+                <h4>ratesheet</h4>
             </li>
         </ul>
         <div class="clear"></div>

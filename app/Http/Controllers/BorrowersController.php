@@ -25,7 +25,58 @@ class BorrowersController extends Controller
      */
     public function create()
     {
-        return redirect('/application/maritalstatus');
+        switch (request('Submit')) {
+            case "Male":
+                return redirect('/application/maritalstatus');
+                break;
+            case "Female":
+                return redirect('/application/maritalstatus');
+                break;
+            case "Hispanic or Latino":
+                return redirect('/application/hispaniclatino');
+                break;
+            case "Not Hispanic or Latino":
+                return redirect('/application/nothispaniclatino');
+                break;
+            case "Mexican":
+                return redirect('/application/addcoborrower');
+                break;
+            case "Puerto Rican":
+                return redirect('/application/addcoborrower');
+                break;
+            case "Cuban":
+                return redirect('/application/addcoborrower');
+                break;
+            case "Other Hispanic or Latino":
+                return redirect('/application/addcoborrower');
+                break;
+            case "White":
+                return redirect('/application/addcoborrower');
+                break;
+            case "Black or African American":
+                return redirect('/application/addcoborrower');
+                break;
+            case "Asia":
+                return redirect('/application/nothispaniclatinoasian');
+                break;
+            case "Native Hawaiian or Other Pacific Islander":
+                return redirect('/application/addcoborrower');
+                break;
+            case "American Indian or Alaska Native":
+                return redirect('/application/addcoborrower');
+                break;
+            case "Do No Wish to Provide":
+                return redirect('/application/addcoborrower');
+                break;
+            case "Add CoBorrower":
+                return redirect('/application/borrower');
+                break;
+            case "Add Employment":
+                return redirect('/application/militarystatus');
+                break;
+            default:
+                return redirect('/application/addcoborrower');
+        }
     }
 
     /**

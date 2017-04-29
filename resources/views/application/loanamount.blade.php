@@ -3,19 +3,16 @@
 @include('common.statusbar')
 
 
-<div class="progress_block step1">
+<div class="progress_block step4">
     @include('application.progress')
 </div>
 
-<!--Need to update <form>: IF exist then "method=get(edit)" else "method=post" ENDIF-->
-<form class="form_block" method="get" action="/application/ratesheet">
+<form class="form_block" method="post" action="/application/loanamount">
     {{ csrf_field() }}
 
-    <h3 class="text-center">loan amount</h3>
-
-    <p></p><br/>
-
     <div class="container">
+        <h3 class="text-center">loan amount</h3>
+        <p></p><br/>
         <section class="container_block_in text-center">
 
             <span class="clear"></span>
@@ -44,15 +41,15 @@
                     <ul>
                         <li>
                             <a><span><input type="image" src="/images/loanamount_img.png"
-                                            width="190" height="190" alt="Submit"
-                                            value="Purchase" name="Submit"></span>
+                                width="190" height="190" alt="Submit"
+                                value="Purchase" name="Submit"></span>
                                 <small>purchase</small></a>
                         </li>
 
                         <li>
                             <a><span><input type="image" src="/images/Property-Value_img.png"
-                                            width="190" height="190" alt="Submit"
-                                            value="Refinance" name="Submit"></span>
+                                width="190" height="190" alt="Submit"
+                                value="Refinance" name="Submit"></span>
                                 <small>refinance</small></a>
                         </li>
                     </ul>
@@ -61,22 +58,8 @@
             </div>
         </div>
         <div class="push"></div>
-    </div>
 </form>
 
 @include('common.footer')
-
-<script type="text/javascript">
-
-    $(document).ready(function() {
-        $('input').customInput();
-
-        $('nav').clone().appendTo('.side_bar');
-        $('.nav-icon,.overlay').click(function(e) {
-            $('body,.nav-icon').toggleClass('open');
-        });
-    });
-</script>
-
 
 <!-- Placed at the end of the document so the pages load faster -->

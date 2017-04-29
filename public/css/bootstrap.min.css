@@ -8,7 +8,7 @@
 
 html {
     /*font-family: sans-serif;*/
-    font-family: Polly-Regular;
+    font-family: 'Polly-Regular', 'Proxima Nova Rg', sans-serif;
     line-height: 1.15;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
@@ -474,7 +474,7 @@ h5,
 h6 {
     margin-bottom: .5rem;
     font-family: inherit;
-    font-weight: 500;
+    /*font-weight: 500;*/
     line-height: 1.1;
     color: inherit
 }
@@ -863,6 +863,7 @@ pre code {
     padding-right: 15px;
     padding-left: 15px
 }
+
 @media (min-width: 576px) {
     .col,
     .col-1,
@@ -1356,6 +1357,7 @@ pre code {
 .offset-11 {
     margin-left: 91.666667%
 }
+
 @media (min-width: 576px) {
     .col-sm {
         -webkit-flex-basis: 0;
@@ -1573,6 +1575,7 @@ pre code {
         margin-left: 91.666667%
     }
 }
+
 @media (min-width: 768px) {
     .col-md {
         -webkit-flex-basis: 0;
@@ -1619,6 +1622,7 @@ pre code {
         flex: 0 0 33.333333%;
         max-width: 33.333333%
     }
+    
     .col-md-5 {
         -webkit-box-flex: 0;
         -webkit-flex: 0 0 41.666667%;
@@ -1626,6 +1630,7 @@ pre code {
         flex: 0 0 41.666667%;
         max-width: 41.666667%
     }
+
     .col-md-6 {
         -webkit-box-flex: 0;
         -webkit-flex: 0 0 50%;
@@ -1633,6 +1638,8 @@ pre code {
         flex: 0 0 50%;
         max-width: 50%
     }
+
+    
     .col-md-7 {
         -webkit-box-flex: 0;
         -webkit-flex: 0 0 58.333333%;
@@ -1640,6 +1647,7 @@ pre code {
         flex: 0 0 58.333333%;
         max-width: 58.333333%
     }
+
     .col-md-8 {
         -webkit-box-flex: 0;
         -webkit-flex: 0 0 66.666667%;
@@ -1696,6 +1704,7 @@ pre code {
     .pull-md-6 {
         right: 50%
     }
+
     .pull-md-7 {
         right: 58.333333%
     }
@@ -1729,15 +1738,19 @@ pre code {
     .push-md-4 {
         left: 33.333333%
     }
+
     .push-md-5 {
         left: 41.666667%
     }
+
     .push-md-6 {
         left: 50%
     }
+    
     .push-md-7 {
         left: 58.333333%
     }
+
     .push-md-8 {
         left: 66.666667%
     }
@@ -2756,12 +2769,6 @@ fieldset[disabled] a.btn {
     border-color: #0275d8
 }
 
-.btn-primary-rc {
-    color: #fff;
-    background-color: #e67e22;
-    border-color: #e67e22
-}
-
 .btn-primary:hover {
     color: #fff;
     background-color: #025aa5;
@@ -3165,7 +3172,8 @@ input[type=submit].btn-block {
     display: none
 }
 .collapse.show {
-    display: block
+    display: block;
+    background-color: darkorange;
 }
 tr.collapse.show {
     display: table-row
@@ -3790,6 +3798,7 @@ tbody.collapse.show {
     margin-bottom: 0;
     list-style: none
 }
+
 .nav-link {
     display: block;
     padding: .5em 1em
@@ -3890,6 +3899,7 @@ ul.dropdown-menu {
     line-height: inherit;
     white-space: nowrap
 }
+
 .navbar-brand:focus,
 .navbar-brand:hover {
     text-decoration: none
@@ -3975,6 +3985,7 @@ ul.dropdown-menu {
         -ms-flex-align: center;
         align-items: center
     }
+
     .navbar-toggleable .navbar-nav {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
@@ -3982,10 +3993,12 @@ ul.dropdown-menu {
         -ms-flex-direction: row;
         flex-direction: row
     }
+
     .navbar-toggleable .navbar-nav .nav-link {
         padding-right: .5rem;
         padding-left: .5rem
     }
+
     .navbar-toggleable>.container {
         display: -webkit-box;
         display: -webkit-flex;
@@ -3999,6 +4012,7 @@ ul.dropdown-menu {
         -ms-flex-align: center;
         align-items: center
     }
+
     .navbar-toggleable .navbar-collapse {
         display: -webkit-box!important;
         display: -webkit-flex!important;
@@ -4774,7 +4788,7 @@ a.badge:hover {
     background-color: #c9302c
 }
 .jumbotron {
-    background-image: url("/images/homepage_v3.png");
+    background-image: url("/images/homepage_jumbotron.png");
     background-size: cover;
     background-size: 100% 100%;
     -moz-background-size: 100% 100%;

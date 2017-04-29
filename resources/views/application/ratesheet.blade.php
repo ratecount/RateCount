@@ -1,7 +1,8 @@
 @extends('indexlayout.header')
 @include('common.navbar')
+@include('common.statusbar')
 
-<div class="progress_block step1">
+<div class="progress_block step5">
     @include('application.progress')
 </div>
 
@@ -31,14 +32,14 @@
             <th>Lender</th>
             <th>Rate</th>
             <th>Payment</th>
-            <th>Visit Lender</th>
-            <th></th>
+            <!--<th>Visit Lender</th>-->
+            <!--<th></th>-->
         </tr>
 
         <tr>
             <td>
                 <div class="lender">
-                    <a href="#"><img src="images/consumer_logo.png" width="200" height="45"
+                    <a href="#"><img src="/images/Lender5.png" width="200" height="45"
                         alt="logo"></a>
                     <div class="lender_in">
                         <div class="lender_lft">
@@ -77,14 +78,12 @@
                     <h5>As of 08/02</h5>
                 </div>
             </td>
-            <td>
-                <a href="#" class="select_btn">Select</a>
-            </td>
+            <!--<td><a href="#" class="select_btn">Select</a></td>-->
         </tr>
         <tr>
             <td>
                 <div class="lender">
-                    <a href="#"><img src="images/capital_logo.png" width="145" height="50" alt="logo"></a>
+                    <a href="#"><img src="/images/Lender1.png" width="145" height="50" alt="logo"></a>
                     <div class="lender_in">
                         <div class="lender_lft">
                             <ul>
@@ -124,14 +123,12 @@
                     <h5>As of 08/02</h5>
                 </div>
             </td>
-            <td>
-                <a href="#" class="select_btn">Select</a>
-            </td>
+            <!--<td><a href="#" class="select_btn">Select</a></td>-->
         </tr>
         <tr>
             <td>
                 <div class="lender">
-                    <a href="#"><img src="images/bank_logo.png" width="190" height="50" alt="logo"></a>
+                    <a href="#"><img src="/images/Lender2.png" width="190" height="50" alt="logo"></a>
                     <div class="lender_in">
                         <div class="lender_lft">
                             <a href="#">Write a review</a>
@@ -157,14 +154,12 @@
                     <h5>As of 08/02</h5>
                 </div>
             </td>
-            <td>
-                <a href="#" class="select_btn">Select</a>
-            </td>
+            <!--<td><a href="#" class="select_btn">Select</a></td>-->
         </tr>
         <tr>
             <td>
                 <div class="lender">
-                    <a href="#"><img src="images/finacial.png" width="200" height="50" alt="logo"></a>
+                    <a href="#"><img src="/images/Lender3.png" width="200" height="50" alt="logo"></a>
                     <div class="lender_in">
                         <div class="lender_lft">
                             <ul>
@@ -204,14 +199,12 @@
                     <h5>As of 08/02</h5>
                 </div>
             </td>
-            <td>
-                <a href="#" class="select_btn">Select</a>
-            </td>
+            <!--<td><a href="#" class="select_btn">Select</a></td>-->
         </tr>
         <tr>
             <td>
                 <div class="lender">
-                    <a href="#"><img src="images/internetbank_logo.png" width="97" height="50" alt="logo"></a>
+                    <a href="#"><img src="/images/Lender4.png" width="97" height="50" alt="logo"></a>
                     <div class="lender_in">
                         <div class="lender_lft">
                             <ul>
@@ -251,26 +244,27 @@
                     <h5>As of 08/02</h5>
                 </div>
             </td>
-            <td><a href="#" class="select_btn">Select</a></td>
+            <!--<td><a href="#" class="select_btn">Select</a></td>-->
         </tr>
 
     </table>
 </div>
 
-<form class="form-horizontal" method="get" action="/login">
-
+<form class="form-horizontal" method="post" action="/application/ratesheet">
+    {{ csrf_field() }}
     <div class="container text-center">
-        <h3>RateCount one application process</h3>
-        <h3>submit to all the lenders</h3>
+        <br/><br/>
+        <h3>let's do it!</h3>
+
         <div class="row">
             <div class="col">
                 <ul>
                     <li>
                         <a><span>
-                            <input type="image" src="/images/General_Next.png"
+                            <input type="image" src="/images/createaccount_v.png"
                                    width="190" height="190" alt="Submit"
-                                   value="Submit" name="Submit"></span>
-                            <small>sign up/in</small></a>
+                                   value="Sign In" name="Submit"></span>
+                            <small>sign in</small></a>
                     </li>
                 </ul>
                 <div class="clear"></div>
@@ -281,14 +275,14 @@
 </form>
 @include('common.footer')
 
-<script type="text/javascript">
+<script>
     $(document).ready(function() {
 
-        $('input').customInput();
+    $('input').customInput();
 
-        $('nav').clone().appendTo('.side_bar');
-        $('.nav-icon,.overlay').click(function(e) {
-            $('body,.nav-icon').toggleClass('open');
-        });
+    $('nav').clone().appendTo('.side_bar');
+    $('.nav-icon,.overlay').click(function(e) {
+    $('body,.nav-icon').toggleClass('open');
+    });
     });
 </script>

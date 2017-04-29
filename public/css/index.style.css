@@ -1,5 +1,24 @@
-/* GLOBAL STYLES
--------------------------------------------------- */
+/* INDEX STYLES-------------------------------------------------- */
+
+/*================
+NAVBAR STARTS
+================*/
+.opaque-navbar {
+  background-color: rgba(254,55,14,0);
+  /*Transparent = rgba(0,0,0,0) / Translucent = (0,0,0,0.5)
+  height: 60px;
+  border-bottom: 0;
+  transition: background-color .5s ease 0s;*/
+}
+
+.opaque-navbar.opaque {
+  background-color: #293E6A;
+  height: 80px;
+  transition: background-color .5s ease 0s;
+}
+/*================
+NAVBAR ENDS
+================*/
 
 .block_overlay {
   background: #f1f8f5;
@@ -10,252 +29,26 @@
 }
 
 .jumbotron_image_rc {
-  background-color: #11284A;
-  background-image: url("/images/homepage_v2.png");
+  background-color: #ffffff; /*#11284A;*/
+  background-image: url("/images/homepage_jumbotron.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.footer-social-icons {
-  width: 350px;
-  display:block;
-  margin: 0 auto;
-}
-.social-icon {
-  color: #fff;
-  display: inherit;
-}
-ul.social-icons {
-  margin-top: 10px;
-}
-.social-icons li {
-  vertical-align: top;
-  display: inline;
-  height: 100px;
-  padding: 0 15px;
-}
-.social-icons a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.fa-facebook {
-  padding:10px 45px;
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition: .5s;
-  color: #3d5b99;
-}
-.fa-facebook:hover {
-  background-color: #3d5b99;
-  color: #ffffff;
-}
-
-.fa-twitter {
-  padding:10px 45px;
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition: .5s;
-  color: #00aced;
-}
-.fa-twitter:hover {
-  background-color: #00aced;
-  color: #ffffff;
-}
-.fa-rss {
-  padding:10px 45px;
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition: .5s;
-  color: #eb8231;
-}
-.fa-rss:hover {
-  background-color: #eb8231;
-  color: #ffffff;
-}
-.fa-youtube {
-  padding:10px 45px;
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition: .5s;
-  color: #e64a41;
-}
-.fa-youtube:hover {
-  background-color: #e64a41;
-  color: #ffffff;
-}
-.fa-linkedin {
-  padding:10px 45px;
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition: .5s;
-  color: #0073a4;
-}
-.fa-linkedin:hover {
-  background-color: #0073a4;
-  color: #ffffff;
-}
-.fa-google-plus {
-  padding:10px 45px;
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition: .5s;
-  color: #e25714;
-}
-.fa-google-plus:hover {
-  background-color: #e25714;
-  color: #ffffff;
-}
-
-.fa-github {
-  padding:10px 45px;
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition: .5s;
-  color: #191717;
-}
-.fa-github:hover {
-  background-color: #191717;
-  color: #ffffff;
-}
-
-.
-@media screen and (min-width: 600px) {
-  .jumbotron_image_rc {
-    min-height: 480px
-  }
-}
-@media screen and (min-width: 1000px) {
-  .jumbotron_image_rc {
-    min-height: 600px
-  }
-}
-@media screen and (min-width: 880px) {
-  .jumbotron_image_rc .overlay {
-    padding-top: 100px
-  }
+.jumbotron_image_partner_rc {
+  background-color: #ffffff; /*#11284A;*/
+  background-image: url("/images/index_partners.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 /*
-.zipcode_rgt {
-  display:inline-block;
-  float:left;
-  padding:0 0 0 20px;
-}
-.input_block {
-  display:block;
-  padding:15px 0;
-  width: 400px;
-  border: none ! important;
-  border-radius: 0px;
-  background: rgba(255,255,255,1) /*rgba(255,147,76, .8) #FF6600 #f1f8f5;*/
-/*}
-
-.banner {
-  display:block;
-  position:relative;
-  height:100%;
-  height:calc(100% - 200px);
-  -moz-height:calc(100% - 74px);
-  -ms-height:calc(100% - 74px);
-  -o-height:calc(100% - 74px);
-  -webkit-height:calc(100% - 74px);
-  background:url(/images/carousel8_v4.jpg) no-repeat bottom center;
-  background-size:cover;
-  background-position:50% 0;
-}
-
-.banner_in	{display: block;
-  width:100%;
-  height:100%;
-  position:absolute;
-  top:0;
-  text-align:center;
-  left:0;
-}
-
-.banner_main {
-  display: table;
-  height:100%;
-  width: 100%;
-}
-
-.banner_text {
-  text-align:center;
-  display: table-cell;
-  width:100%;
-  height: 100%;
-  vertical-align: middle;
-}
-
-/*::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-  /*color:    #ffffff;
-}*/
-/*:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-/*color:    #ffffff;
-opacity:  1;
-}
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-/*color:    #ffffff;
-opacity:  1;
-}
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-/*color:    #ffffff;
-}*/
-
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-/* Carousel base class
-.carousel {
-  margin-bottom: 4rem;
-}
-/* Since positioning the image, we need to help out the caption */
-/*.carousel-caption {
-  z-index: 10;
-  bottom: 3rem;
-}
-
-/* Declare heights because of positioning of img element */
-/*.carousel-item {
-  height: 32rem;
-  background-color: #777;
-}
-.carousel-item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 32rem;
-}
-
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-  width: 70%;
-  margin: auto;
-}
-
-
-/* MARKETING CONTENT
--------------------------------------------------- */
-
+Marketing STARTS
+ */
 /* Center align the text within the three columns below the carousel */
-/*.marketing .col-lg-4 {
+.marketing .col-lg-4 {
   margin-bottom: 1.5rem;
   text-align: center;
 }
@@ -267,40 +60,210 @@ opacity:  1;
   margin-left: .75rem;
 }
 
+/*====================
+Zipcode Input STARTS
+ ====================*/
 
-/* Featurettes
-------------------------- */
+.zipcode {display:inline-block;}
 
-/*.featurette-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+.zipcode_input_block {display:inline-block;}
+
+.input_zipcode {
+  width: 450px;
+  padding:10px;
+  height:70px;
+  line-height:34px;
+  background:#ffffff;
+  outline: none;
+  border: none;
+  font-family: 'Polly-Regular', 'ProximaNova-Regular', sans-serif;
+  font-weight: normal;
+  font-size:24px;
+  color: #e25714;
+  float: left;
+  display: inline-block;
+  border-top-left-radius: .2rem;
+  border-bottom-left-radius: .2rem;
 }
 
-/* Thin out the marketing headings */
-/*.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -.05rem;
+.input_zipcode::-webkit-input-placeholder {
+  opacity: 1;
+  transition: inherit;
+  font-size: 17px;
+  color: rgba(226, 87, 20,.8);
 }
 
+.zipcode_btn {
+  display:inline-block;
+  height: 70px;
+  width: 70px;
+  text-align:center;
+  border:none;
+  border-top-right-radius: .2rem;
+  border-bottom-right-radius: .2rem;
+  background-color: #e67e22;
+  float: right;
+}
 
-/* RESPONSIVE CSS
--------------------------------------------------- */
+.btn-primary-rc {
+  border-style: solid;
+  background-color: rgba(0,0,0,0);
+  border-color: #e67e22;
+  color: #e67e22;
+}
 
-/*@media (min-width: 40em) {
-  /* Bump up size of carousel content */
-  /*.carousel-caption p {
-    margin-bottom: 1.25rem;
-    font-size: 1.25rem;
-    line-height: 1.4;
+.fa-arrow-right {
+  color: #ffffff;
+  vertical-align: middle;
+}
+.zipcode_btn:hover, .fa-arrow-right:hover {
+  color: #fff;
+  background-color: #e67e22;
+  border-color: #e67e22;
+  cursor: pointer;
+}
+
+/*====================
+Zipcode Input ENDS
+ ====================*/
+
+
+@media screen and (min-width: 1000px) {
+  .jumbotron_image_rc {
+    min-height: 600px
+  }
+}
+
+@media screen and (min-width: 880px) {
+  .jumbotron_image_rc .overlay {
+    padding-top: 100px
   }
 
-  .featurette-heading {
-    font-size: 50px;
+    .rc_col-md-7 {   
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px
+  }
+
+  .rc_col-md-5 {   
+    position: relative;
+    width: inherit;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px
+  }
+
+}
+
+@media (max-width: 767px) and (min-width: 467px) {
+  .rc_col-md-7 {   
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px
+  }
+
+  .rc_col-md-5 {   
+    position: relative;
+    width: inherit;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px
+  }
+
+  .input_zipcode {
+    width: 450px;
+    padding:10px;
+    height:100px;
+    line-height:34px;
+    background:#ffffff;
+    outline: none;
+    border: none;
+    font-family: 'Polly-Regular', 'ProximaNova-Regular', sans-serif;
+    font-weight: normal;
+    font-size:36px;
+    color: #e25714;
+    float: left;
+    display: inline-block;
+    border-top-left-radius: .2rem;
+    border-bottom-left-radius: .2rem;
+  }
+
+  .input_zipcode::-webkit-input-placeholder {
+    opacity: 1;
+    transition: inherit;
+    font-size: 32px;
+    color: rgba(226, 87, 20,.8);
+  }
+
+  .zipcode_btn {
+    display:inline-block;
+    height: 100px;
+    width: 70px;
+    text-align:center;
+    border:none;
+    border-top-right-radius: .2rem;
+    border-bottom-right-radius: .2rem;
+  }
+
+  .btn-primary-rc {
+    border-style: solid;
+    background-color: rgba(0,0,0,0);
+    border-color: #e67e22;
+    color: #e67e22;
+  }
+
+  .zipcode_btn:hover, .fa-arrow-right:hover {
+    color: #e67e22;
+    background-color: #ffffff;
+    border-color: #ffffff;
+    cursor: pointer;
   }
 }
 
-@media (min-width: 62em) {
-  .featurette-heading {
-    margin-top: 7rem;
+@media screen and (min-width: 600px) {
+  .jumbotron_image_rc {
+    min-height: 480px
+  }
+
+  .rc_col-md-7 {   
+    position: relative;
+    /*width: 100%;*/
+    height: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px
+  }
+
+  .rc_col-md-5 {   
+    position: relative;
+    height: inherit;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px
+  }
+
+  .img-responsive,
+  .thumbnail > img,
+  .thumbnail a > img,
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  h2 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 467px) {
+  .opaque-navbar.opaque {
+    height: 100px;
+
   }
 }

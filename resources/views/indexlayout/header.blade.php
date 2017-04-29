@@ -20,6 +20,8 @@
 
         <script type="text/javascript" src="/js/jquery_c.js"></script>
         <script type="text/javascript" src="/js/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-1.12.4.min.js"></script>
+        <!--<script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>-->
         <script type="text/javascript" src="/js/customInput.jquery.js"></script>
         <script type="text/javascript" src="/js/jquery-ui.js"></script>
         <script type="text/javascript" src="/js/jquery.ui.touch-punch.min.js"></script>
@@ -29,6 +31,6 @@
         <script type="text/javascript" src="/js/bootstrap-select.js"></script>
 
     </head>
-    <body>
+
   
   

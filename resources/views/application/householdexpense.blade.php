@@ -1,45 +1,19 @@
 @extends('indexlayout.header')
-@include('indexlayout.indexnavbar')
+@include('common.navbar')
 @include('common.statusbar')
 
-<script type="text/javascript">
-    $(document).ready(function () {
-        $('#checkbox1').change(function () {
-            if (!this.checked)
-//  ^
-                $('#autoUpdate').fadeIn('slow');
-            else
-                $('#autoUpdate').fadeOut('slow');
-        });
-    });
-</script>
-
-<script type="text/javascript">
-    $(function () {
-        $("#cmn-toggle-1").click(function () {
-            if ($(this).is(":checked")) {
-                $("#yes").show();
-            } else {
-                $("#yes").hide();
-            }
-        });
-    });
-</script>
-
-<div class="progress_block step1">
-    @include('application.progress')
+<div class="progress_block step2">
+    @include('application.progress4')
 </div>
 
 <!--Need to update <form>: IF exist then "method=get(edit)" else "method=post" ENDIF-->
-<form class="form_block" method="get" action="/application/maritalstatus">
-    <h3 class="text-center">Hi!</h3>
-    Add another director <input type="checkbox" id="checkbox1" style="color: black"/>
-    <div id="autoUpdate" class="autoUpdate">
-        content
-    </div>
+<form class="form_block" method="post" action="/application/householdexpense">
+    {{ csrf_field() }}
+
 
     <div class="container">
-        <div class="container_in">
+        <h3 class="text-center">Hi!</h3>
+        <div class="container_in_form">
             <div class="field">
                  <input type="text" class="creditor" id="creditor"
                         placeholder="Enter Creditor (Lender) Name"/>
@@ -89,8 +63,9 @@
                 <ul>
                     <li>
                         <a><span><input type="image" src="/images/Add_Finance.png"
-                                        width="190" height="190" alt="Submit"></span>
-                            <small>add other<br/>expenses</small></a>
+                                width="190" height="190" alt="Submit"
+                                value="Other Expenses" name="Submit">
+                            </span><small>add other<br/>expenses</small></a>
                     </li>
                 </ul>
                 <div class="clear"></div>
@@ -99,8 +74,28 @@
     </div>
 </form>
 
-
-
-
-
 @include('common.footer')
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#checkbox1').change(function () {
+            if (!this.checked)
+//  ^
+                $('#autoUpdate').fadeIn('slow');
+            else
+                $('#autoUpdate').fadeOut('slow');
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#cmn-toggle-1").click(function () {
+            if ($(this).is(":checked")) {
+                $("#yes").show();
+            } else {
+                $("#yes").hide();
+            }
+        });
+    });
+</script>

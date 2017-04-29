@@ -1,28 +1,47 @@
 
-<nav class="navbar navbar-toggleable-md navbar-inverse rc_bg-inverse">
-    <button class="navbar-toggler navbar-toggler-right" type="button"
-        data-toggle="collapse" data-target="#navbarsExampleDefault"
-        aria-controls="navbarsExampleDefault" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+<body>
+<!-- Wrapper Starts -->
+<div class="wrapper min_wrap">
+    <div class="overlay"></div>
+    <div class="side_bar"></div>
 
-    <a href="/"><img src="/images/favicon2.png" alt="logo"></a>
+    <!-- Header Starts -->
+    <header class="navbar">
+        <div class="rc_navbar-brand">
+            <a href="/"><img src="/images/favicon4.png" width="300px"></a>
 
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <form class="form-inline my-2 my-lg-auto mr-auto">
-            <select class="select-dropdown">
-                <option selected>english</option>
-                <option>hablo español</option> <!--spanish-->
-                <option>我说中文</option> <!--chinese-->
-                <option>tiếng việt</option> <!--vietnamese-->
-                <option>나는 한국어 구사</option> <!--korean-->
-            </select>
-        </form>
+            <a>
+                <form>
+                    <select class="select-dropdown">
+                        <option selected>english</option>
+                        <option>hablo español</option>
+                        <option>我说中文</option>
+                        <option>tiếng việt</option>
+                        <option>나는 한국어 구사</option>
+                    </select>
+                </form>
+            </a>
 
-        <form class="form-inline my-2 my-md-0">
-            <button class="btn rc_btn-outline-success my-2 my-sm-0" type="Submit">
-                <i class="fa fa-lock" aria-hidden="true"></i> sign in</button>
-        </form>
-    </div>
-</nav>
+            <div class="nav-icon"><span></span><span></span><span></span></div>
+
+            <nav>
+                <ul>
+                    <li>
+                        <form method="get" action="/partnerwithus">
+                            <button class="btn rc_btn-outline-success my-2 my-sm-0" type="Submit">
+                                <i class="fa fa-users" aria-hidden="true"></i> partner with us</button>
+                        </form>
+                    </li>
+                    <li>
+                        <form method="get" action="/login">
+                            <button class="btn rc_btn-outline-success my-2 my-sm-0" type="Submit">
+                                <i class="fa fa-lock" aria-hidden="true"></i> login</button>
+                        </form>
+                    </li>
+                </ul>
+                <div class="clear"></div>
+            </nav>
+
+            <div class="clear"></div>
+        </div>
+    </header>

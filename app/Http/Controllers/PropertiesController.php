@@ -1,10 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\Redirect;
 use Illuminate\Http\Request;
 
-class MaritalStatusController extends Controller
+class PropertiesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,8 +13,9 @@ class MaritalStatusController extends Controller
      */
     public function index()
     {
-
+        //
     }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -22,21 +23,40 @@ class MaritalStatusController extends Controller
      */
     public function create()
     {
-        if (request('Submit') == 'Male') {
-            return view('application.maritalstatus');
+        switch (request('Submit')) {
+            case "Household Expenses":
+                return redirect('/application/householdexpense');
+                break;
+            case "Other Expenses":
+                return redirect('/application/otherexpense');
+                break;
+            case "Revolving":
+                return redirect('/application/otherexpense');
+                break;
+            case "Installment":
+                return redirect('application/otherexpense');
+                break;
+            case "Alimony":
+                return redirect('application/otherexpense');
+                break;
+            case "Child Support":
+                return redirect('/application/otherexpense');
+                break;
+            case "Separate Maintenance":
+                return redirect('/application/otherexpense');
+                break;
+            case "Job Related Expenses":
+                return redirect('application/otherexpense');
+                break;
+            case "Other":
+                return redirect('application/otherexpense');
+                break;
+            case "Done":
+                return redirect('application/financedeclaration');
+                break;
+            default:
+                return redirect('/');
         }
-        elseif (request('Submit') == 'Female') {
-            return view('application.maritalstatus');
-        }
-        elseif (request('Submit') == 'Married') {
-            return view('/application/demographic');
-            //dd(request()->all());
-        }
-        //else {
-        //    dd(request()->all());
-        //}
-
-        dd(request()->all());
     }
 
     /**

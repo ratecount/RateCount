@@ -1,28 +1,29 @@
 @extends('indexlayout.header')
-@include('indexlayout.indexnavbar')
+@include('common.navbar')
 @include('common.statusbar')
 
-<div class="progress_block step1">
-    @include('application.progress')
+<div class="progress_block step2">
+    @include('application.progress3')
 </div>
 
 <!--Need to update <form>: IF exist then "method=get(edit)" else "method=post" ENDIF-->
 <form class="form_block" method="post" action="/application/employmentinfo">
     {{ csrf_field() }}
+
     <h3 class="text-center">John Smith,<br/><br/>please provide the last two years employment<br/> </h3>
     <p></p>
     <div class="container">
-        <div class="container_in">
+        <div class="container_in_form">
             <div class="field">
                 <input type="text" class="employer" id="employer"
-                    required placeholder="Employer or Business Name"/>
+                    placeholder="Employer or Business Name"/>
                 <label for="employer">Employer or Business Name</label>
             </div>
             <div class="clear"></div>
 
             <div class="field">
                 <input type="text" class="position_or_title" id="postion_or_title"
-                    required placeholder="Position or Title"/>
+                    placeholder="Position or Title"/>
                 <label for="postion_or_title">Position or Title</label>
             </div>
             <div class="clear"></div>
@@ -48,13 +49,12 @@
             </div>
             <div class="clear"></div>
 
-            <div class="field">
-                <input type="text" class="address" id="address"
-                    placeholder="Address"/>
+            <div class="field" id="locationField">
+                <input type="text" class="address" id="autocomplete"
+                    placeholder="Address" onFocus="geolocate()"/>
                 <label for="address">Address</label>
             </div>
             <div class="clear"></div>
-
         </div>
     </div>
     <h3 class="text-center">for this job, were or are you a</h3>
@@ -66,18 +66,16 @@
             <div class="col">
                 <ul>
                     <li>
-                        <a><span>
-                                <input type="image" src="/images/Employment_Type_Company.png"
-                                    width="190" height="190" alt="Submit"
-                                    value="W2" name="Submit">
+                        <a><span><input type="image" src="/images/Employment_Type_Company.png"
+                                width="190" height="190" alt="Submit"
+                                value="W-2" name="Submit">
                             </span><small>W-2<br/>Employee</small></a>
                     </li>
 
                     <li>
-                        <a><span>
-                                <input type="image" src="/images/Employment_Type_SelfEmploy.png"
-                                    width="190" height="190" alt="Submit"
-                                    value="Self Employ" name="Submit">
+                        <a><span><input type="image" src="/images/Employment_Type_SelfEmploy.png"
+                                width="190" height="190" alt="Submit"
+                                value="Self Employ" name="Submit">
                             </span><small>self employ or<br/>business owner</small></a>
                     </li>
                 </ul>
@@ -86,9 +84,7 @@
         </div>
     </div>
 </form>
+<div class="push"></div>
 
-
-
-
-
+@include('common.googleautocomplete')
 @include('common.footer')

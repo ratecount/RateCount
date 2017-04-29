@@ -1,19 +1,23 @@
 @extends('indexlayout.header')
-@include('indexlayout.indexnavbar')
+@include('common.navbar')
 @include('common.statusbar')
 
-<div class="progress_block step1">
-    @include('application.progress')
+<div class="progress_block step3">
+    @include('application.progress3')
 </div>
 
 <!--Need to update <form>: IF exist then "method=get(edit)" else "method=post" ENDIF-->
-<form class="form_block" method="get" action="/application/employmentinfo">
-    <h3 class="text-center">John Smith,<br/><br/>please provide the last two years employment<br/> </h3>
-    <p></p>
+<form class="form_block" method="post" action="/application/employmentselfemployincome">
+    {{ csrf_field() }}
+
     <div class="container">
-        <div class="container_in">
+        <h3 class="text-center">John Smith,<br/><br/>please provide your salary<br/> </h3>
+        <p></p>
+
+        <div class="container_in_form">
             <div class="field">
-                <input type="text" class="monthly_income_or_loss" id="monthly_income_or_loss" required placeholder="Enter your monthly income (or loss)"/>
+                <input type="text" class="monthly_income_or_loss" id="monthly_income_or_loss"
+                       placeholder="Enter your monthly income (or loss)"/>
                 <label for="monthly_income_or_loss">Monthly Income (or Loss)</label>
             </div>
             <div class="clear"></div>
@@ -39,16 +43,16 @@
             <div class="col">
                 <ul>
                     <li>
-                        <a><span>
-                                <input type="image" src="/images/Add_Employment.png"
-                                       width="190" height="190" alt="Submit">
+                        <a><span><input type="image" src="/images/Add_Employment.png"
+                                width="190" height="190" alt="Submit"
+                                value="Add Employment" name="Submit">
                             </span><small>add<br/>employment</small></a>
                     </li>
 
                     <li>
-                        <a><span>
-                                <input type="image" src="/images/OtherIncome_YesNo_Yes.png"
-                                       width="190" height="190" alt="Submit">
+                        <a><span><input type="image" src="/images/OtherIncome_YesNo_Yes.png"
+                                width="190" height="190" alt="Submit"
+                                value="Other Income" name="Submit">
                             </span><small>add other<br/>income source</small></a>
                     </li>
                 </ul>
@@ -57,9 +61,5 @@
         </div>
     </div>
 </form>
-
-
-
-
 
 @include('common.footer')
