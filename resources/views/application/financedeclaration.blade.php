@@ -15,7 +15,7 @@
             <section class="switch-settings">
                 <div class="row">
                     <div class="question">
-                        <h3>Are there any outstanding judgements against you?</h3>
+                        <h3>any outstanding judgements against you?</h3>
                     </div>
                     <div class="switch">
                         <input id="cmn-toggle-1" class="cmn-toggle cmn-toggle-round" type="checkbox">
@@ -25,7 +25,7 @@
 
                 <div class="row">
                     <div class="question">
-                        <h3>Are you currently delinquent or in default on a federal debt?</h3>
+                        <h3>currently delinquent or in default on a federal debt?</h3>
                     </div>
                     <div class="switch">
                         <input id="cmn-toggle-2" class="cmn-toggle cmn-toggle-round" type="checkbox">
@@ -35,7 +35,7 @@
 
                 <div class="row">
                     <div class="question">
-                        <h3>Are you a party to a lawsuit in which you potentially have any personal financial liability?</h3>
+                        <h3>party to a lawsuit in which you potentially have any personal financial liability?</h3>
                     </div>
                     <div class="switch">
                         <input id="cmn-toggle-3" class="cmn-toggle cmn-toggle-round" type="checkbox">
@@ -45,7 +45,7 @@
 
                 <div class="row">
                     <div class="question">
-                        <h3>Have you conveyed title to any property in lieu of foreclosure in the past 7 years?</h3>
+                        <h3>conveyed title to any property in lieu of foreclosure in the past 7 years?</h3>
                     </div>
                     <div class="switch">
                         <input id="cmn-toggle-4" class="cmn-toggle cmn-toggle-round" type="checkbox">
@@ -55,7 +55,7 @@
 
                 <div class="row">
                     <div class="question">
-                        <h3>Have you had property foreclosed upon in the last 7 years?</h3>
+                        <h3>property foreclosed upon in the last 7 years?</h3>
                     </div>
                     <div class="switch">
                         <input id="cmn-toggle-5" class="cmn-toggle cmn-toggle-round" type="checkbox">

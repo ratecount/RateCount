@@ -9,7 +9,8 @@
 
 <form class="form_block" method="post" action="/application/employmentstatus">
     {{ csrf_field() }}
-    <h3 class="text-center">John Smith, are you</h3>
+    <h3 class="text-center">John Smith</h3>
+    <h4 class="text-center">are you</h4>
 
     <div class="container">
         <div class="row">

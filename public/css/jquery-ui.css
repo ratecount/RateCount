@@ -643,7 +643,7 @@ button.ui-button::-moz-focus-inner {
 }
 
 .ui-slider-horizontal .ui-slider-handle {
-    top: -1.5em;
+    top: -1.25em;
     margin-left: -.6em;
 }
 

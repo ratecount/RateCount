@@ -10,7 +10,8 @@
 <form class="form_block" method="post" action="/application/employmentinfo">
     {{ csrf_field() }}
 
-    <h3 class="text-center">John Smith,<br/><br/>please provide the last two years employment<br/> </h3>
+    <h3 class="text-center">John Smith</h3>
+    <h4 class="text-center">please provide the last two years employment info</h4>
     <p></p>
     <div class="container">
         <div class="container_in_form">
@@ -57,11 +58,12 @@
             <div class="clear"></div>
         </div>
     </div>
-    <h3 class="text-center">for this job, were or are you a</h3>
-
-    <p></p>
 
     <div class="container">
+        <h4 class="text-center">for this job, were or are you a</h4>
+
+        <p></p>
+
         <div class="row">
             <div class="col">
                 <ul>

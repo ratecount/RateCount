@@ -10,9 +10,10 @@
 <form class="form_block" method="post" action="/application/householdexpense">
     {{ csrf_field() }}
 
-
     <div class="container">
-        <h3 class="text-center">Hi!</h3>
+        <h3 class="text-center">John Smith</h3>
+        <h4 class="text-center">let's determine your household expenses</h4>
+
         <div class="container_in_form">
             <div class="field">
                  <input type="text" class="creditor" id="creditor"
@@ -53,11 +54,10 @@
             <div class="clear"></div>
         </div>
     </div>
-    <h3 class="text-center"><br/>next<br/> </h3>
-
-    <p></p>
 
     <div class="container">
+        <h3 class="text-center"><br/>let's add</h3>
+
         <div class="row">
             <div class="col">
                 <ul>
@@ -65,7 +65,7 @@
                         <a><span><input type="image" src="/images/Add_Finance.png"
                                 width="190" height="190" alt="Submit"
                                 value="Other Expenses" name="Submit">
-                            </span><small>add other<br/>expenses</small></a>
+                            </span><small>other expenses</small></a>
                     </li>
                 </ul>
                 <div class="clear"></div>

@@ -9,7 +9,8 @@
 <!--Need to update <form>: IF exist then "method=get(edit)" else "method=post" ENDIF-->
 <form class="form_block" method="post" action="/application/employmentw2income">
     {{ csrf_field() }}
-    <h3 class="text-center">John Smith,<br/><br/>please provide your salary<br/> </h3>
+    <h3 class="text-center">John Smith</h3>
+    <h4 class="text-center">please provide your salary</h4>
     <p></p>
     <div class="container">
         <div class="container_in_form">
@@ -57,11 +58,9 @@
 
         </div>
     </div>
-    <h3 class="text-center">next</h3>
-
-    <p></p>
 
     <div class="container">
+        <h3 class="text-center">let's add</h3>
         <div class="row">
             <div class="col">
                 <ul>
@@ -69,14 +68,14 @@
                         <a><span><input type="image" src="/images/Add_Employment.png"
                                 width="190" height="190" alt="Submit"
                                 value="Add Employment" name="Submit">
-                            </span><small>add<br/>employment</small></a>
+                            </span><small>employment</small></a>
                     </li>
 
                     <li>
                         <a><span><input type="image" src="/images/OtherIncome_YesNo_Yes.png"
                                 width="190" height="190" alt="Submit"
                                 value="Other Income" name="Submit">
-                            </span><small>add other<br/>income source</small></a>
+                            </span><small>other income</small></a>
                     </li>
                 </ul>
                 <div class="clear"></div>

@@ -8,9 +8,11 @@
 
 <form class="form_block" method="post" action="/application/otherincomesourcep2">
     {{ csrf_field() }}
-    <h3 class="text-center">John Smith,<br/><br/>select your other income<br/> </h3>
-    <p></p>
+
     <div class="container">
+        <h3 class="text-center">John Smith</h3>
+        <h4>select your other income</h4>
+        <p></p>
         <div class="row">
             <div class="col">
                 <ul>

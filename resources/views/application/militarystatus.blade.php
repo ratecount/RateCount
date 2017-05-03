@@ -12,9 +12,10 @@
     {{ csrf_field() }}
 
     <div class="container">
-        <h3 class="text-center">Did you (or your deceased spouse) ever serve, or are
-            <br/>you currently serving, in the United States Armed Forces
-        </h3>
+        <h3 class="text-center">You or your deceased spouse</h3>
+        <h4 class="text-center">ever serve, or are you currently serving,
+            in the United States Armed Forces
+        </h4>
 
         <div class="row">
             <div class="col">

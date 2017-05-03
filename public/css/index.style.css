@@ -1,14 +1,12 @@
 /* INDEX STYLES-------------------------------------------------- */
 
+
+
 /*================
 NAVBAR STARTS
 ================*/
 .opaque-navbar {
   background-color: rgba(254,55,14,0);
-  /*Transparent = rgba(0,0,0,0) / Translucent = (0,0,0,0.5)
-  height: 60px;
-  border-bottom: 0;
-  transition: background-color .5s ease 0s;*/
 }
 
 .opaque-navbar.opaque {
@@ -16,9 +14,47 @@ NAVBAR STARTS
   height: 80px;
   transition: background-color .5s ease 0s;
 }
+
+@media(max-width:467px) {
+  .opaque-navbar {
+    width: 100%;
+  }
+
+  .nav-icon {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+  }
+}
 /*================
 NAVBAR ENDS
 ================*/
+
+.tagline2 ul {
+  display: inline-block;
+  width: 100%;
+  padding: 0 0 0 0;
+  margin: 0;
+}
+
+.tagline2 ul li {
+  float: left;
+  display: inline-block;
+  margin: 0 44px 0 0;
+}
+
+.tagline2 ul li:last-child {margin: 0;}
+
+.tagline2  ul li a {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+  line-height: 16px;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
 
 .block_overlay {
   background: #f1f8f5;
@@ -38,7 +74,7 @@ NAVBAR ENDS
 
 .jumbotron_image_partner_rc {
   background-color: #ffffff; /*#11284A;*/
-  background-image: url("/images/index_partners.jpeg");
+  background-image: url("/images/index_partners.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -66,10 +102,13 @@ Zipcode Input STARTS
 
 .zipcode {display:inline-block;}
 
-.zipcode_input_block {display:inline-block;}
+.zipcode_input_block {
+  display:inline-block;
+  width: 100%;
+}
 
 .input_zipcode {
-  width: 450px;
+  width: 85%;
   padding:10px;
   height:70px;
   line-height:34px;
@@ -96,7 +135,7 @@ Zipcode Input STARTS
 .zipcode_btn {
   display:inline-block;
   height: 70px;
-  width: 70px;
+  width: 15%;
   text-align:center;
   border:none;
   border-top-right-radius: .2rem;
@@ -128,142 +167,4 @@ Zipcode Input ENDS
  ====================*/
 
 
-@media screen and (min-width: 1000px) {
-  .jumbotron_image_rc {
-    min-height: 600px
-  }
-}
 
-@media screen and (min-width: 880px) {
-  .jumbotron_image_rc .overlay {
-    padding-top: 100px
-  }
-
-    .rc_col-md-7 {   
-    position: relative;
-    width: 100%;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px
-  }
-
-  .rc_col-md-5 {   
-    position: relative;
-    width: inherit;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px
-  }
-
-}
-
-@media (max-width: 767px) and (min-width: 467px) {
-  .rc_col-md-7 {   
-    position: relative;
-    width: 100%;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px
-  }
-
-  .rc_col-md-5 {   
-    position: relative;
-    width: inherit;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px
-  }
-
-  .input_zipcode {
-    width: 450px;
-    padding:10px;
-    height:100px;
-    line-height:34px;
-    background:#ffffff;
-    outline: none;
-    border: none;
-    font-family: 'Polly-Regular', 'ProximaNova-Regular', sans-serif;
-    font-weight: normal;
-    font-size:36px;
-    color: #e25714;
-    float: left;
-    display: inline-block;
-    border-top-left-radius: .2rem;
-    border-bottom-left-radius: .2rem;
-  }
-
-  .input_zipcode::-webkit-input-placeholder {
-    opacity: 1;
-    transition: inherit;
-    font-size: 32px;
-    color: rgba(226, 87, 20,.8);
-  }
-
-  .zipcode_btn {
-    display:inline-block;
-    height: 100px;
-    width: 70px;
-    text-align:center;
-    border:none;
-    border-top-right-radius: .2rem;
-    border-bottom-right-radius: .2rem;
-  }
-
-  .btn-primary-rc {
-    border-style: solid;
-    background-color: rgba(0,0,0,0);
-    border-color: #e67e22;
-    color: #e67e22;
-  }
-
-  .zipcode_btn:hover, .fa-arrow-right:hover {
-    color: #e67e22;
-    background-color: #ffffff;
-    border-color: #ffffff;
-    cursor: pointer;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  .jumbotron_image_rc {
-    min-height: 480px
-  }
-
-  .rc_col-md-7 {   
-    position: relative;
-    /*width: 100%;*/
-    height: 100%;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px
-  }
-
-  .rc_col-md-5 {   
-    position: relative;
-    height: inherit;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px
-  }
-
-  .img-responsive,
-  .thumbnail > img,
-  .thumbnail a > img,
-  .carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
-
-  h2 {
-    width: 100%;
-  }
-}
-
-@media (max-width: 767px) and (min-width: 467px) {
-  .opaque-navbar.opaque {
-    height: 100px;
-
-  }
-}

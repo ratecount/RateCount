@@ -25,6 +25,7 @@ orange: #e67e22;
     font-style: normal;
 }
 
+
 @font-face {
     font-family: 'Polly-Regular';
     src:
@@ -55,6 +56,20 @@ label {
     background-color: #efefef;
     text-align: center;
 }
+.button_no_border {
+    border: none;
+    outline: none;
+
+}
+.img-fluid-height {height: 100%;}
+
+.image_homepage_share {
+    height: auto;
+    position:relative;
+    background:   url("/images/homepage_share_v2.png")no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
 header
 ,nav
@@ -72,6 +87,7 @@ header
 }
 
 .min_wrap {min-height:480px;}
+
 
 
 #pill .tab-content {
@@ -92,6 +108,15 @@ header
 .nav-pills {
     text-align:center;
 }
+
+/*=====================
+NAVBAR STARTS
+=====================*/
+
+
+/*=====================
+Homepage END
+=====================*/
 
 /*=====================
 NAVBAR START
@@ -126,6 +151,7 @@ NAVBAR START
         padding:0 0 0 0;
         margin:0;
     }
+
 
 /*=====================
 NAVBAR END
@@ -472,7 +498,7 @@ NAV-ICON END
     display: table-cell;
     vertical-align: middle;
     padding: 10px 0 0 0;
-    width: 90%;
+    width: 100%;
 }
 
 .switch-settings h3 {
@@ -566,7 +592,7 @@ input.cmn-toggle-round:checked + label:before {
 }
 
 input.cmn-toggle-round:checked + label:after {
-    margin-left: 65px;
+    margin-left: 65px; /*slider movement*/
 }
 /*--- TOGGLE SWITCH ENDS ---*/
 
@@ -1327,6 +1353,8 @@ index NAVBAR ENDS
     /*================
     NAVBAR STARTS
     ================*/
+    .opaque-navbar {height: 92px;}
+
     .rc_navbar-brand {
         display: inline-block;
         float: left;
@@ -1341,9 +1369,7 @@ index NAVBAR ENDS
         height: inherit;
     }
 
-    .rc_navbar-brand a img {
-        width: 360px;
-    }
+
 
     .nav-icon {
         display:inline-block;
@@ -1441,11 +1467,118 @@ index NAVBAR ENDS
 }
 /*===@media(max-width:1024px) ENDS===*/
 
+@media(max-width:467px) {
+
+
+
+
+
+    .rc_navbar-brand {
+        display: inline-block;
+        float: left;
+        margin: 0;
+        height: 65px;
+    }
+
+    /*.rc_navbar-brand a img	{
+        display:inline-block;
+        padding:0 0 0 0;
+        margin: 70%;
+
+    }*/
+
+    nav {display:none;}
+
+    .nav-icon {
+        display:inline-block;
+        /*position: inherit;*/
+        right:18px;
+        top:22px;
+        float:right;
+        margin:0;
+    }
+
+    .side_bar {
+        display:block;
+        width: 230px;
+        height:100%;
+        position:fixed;
+        right: -230px;
+        text-align: center;
+        background:#59585b;
+        transition:0.5s all ease-in-out;
+        -moz-transition:0.5s all ease-in-out;
+        -ms-transition:0.5s all ease-in-out;
+        -o-transition:0.5s all ease-in-out;
+        -webkit-transition:0.5s all ease-in-out;
+        z-index:999;
+    }
+
+    .side_bar nav {
+        display:block;
+        text-align:left;
+        float:none
+    }
+
+    nav ul {
+        height:100%;
+        overflow:auto;
+        padding:0;
+        display:block;
+    }
+
+    nav ul li {
+        display:block;
+        float:none;
+        width:100%;
+        padding:0;
+        margin:5px 0;
+    }
+
+    nav ul li a	{
+        display:block;
+        /*text-align:center;*/
+        padding:10px 0;
+    }
+
+    .open .side_bar	{
+        right:0;
+        overflow:auto;
+    }
+
+    .wrapper {
+        right:0;
+        position:relative;
+        transition:0.3s all ease-in-out;
+        -moz-transition:0.5s all ease-in-out;
+        -ms-transition:0.5s all ease-in-out;
+        -o-transition:0.5s all ease-in-out;
+        -webkit-transition:0.5s all ease-in-out;
+    }
+
+    .open .wrapper {
+        right:230px;
+        position:fixed;
+        width:100%;
+    }
+
+    .open .nav-icon	{top:15px;}
+
+    .open .overlay {
+        opacity:1;
+        visibility:visible;
+    }
+
+    nav ul li a:hover {
+        background:#84b565;
+        color:#fff;
+    }
+} /*max-width:467px*/
+
+
 
 @media (max-width: 767px) and (min-width: 467px) {
-    h2 {font-size: 48px}
-    h3 {font-size: 30px}
-    p,h5 {font-size: 28px}
+
 
     table, thead, tbody, th, td, tr {
         display: block;
@@ -1600,7 +1733,56 @@ index NAVBAR ENDS
 
 }
 
+@media(max-width:467px) {
 
+    .progress_block_in:before {top:18px;}
+    .progress_block_in:after {top:18px;}
+    .progress_block_in ul:after {top:18px;}
+    .progress_block_in ul li h4 {font-size:12px;}
+    .progress_block_in ul li a {
+        border: 3px solid #e3dfd9;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        padding: 3px;
+        text-align: center;
+        display: table;
+        background: #fff;
+        margin: 0 auto;
+    }
+
+    .progress_block_in ul li a span .fa {font-size:25px;}
+
+
+
+    /*Loan Amount Page*/
+    #SliderValue {font-size:18px;}
+
+    /*RateSheet Page*/
+    .mortgage ul li	{width:100%}
+    .mortgage ul li label {font-size: 18px;}
+    table .main_head {display:none;}
+
+    tbody tr td	{
+        width:100%;
+        text-align: right;
+        padding: 15px;
+    }
+
+    table .main_head th	{
+        background:url(../images/arrow_up_down.png) no-repeat 80% center;
+    }
+    .lender a img {
+        width:100%;
+        height:auto;
+        display:inline-block;
+        text-align:right;
+    }
+    /*RateSheet Page ENDS*/
+
+
+    /*Question ENDS*/
+}
 /*
 Social Media STARTS
  */

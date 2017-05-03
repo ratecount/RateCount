@@ -11,7 +11,8 @@
     {{ csrf_field() }}
 
     <div class="container">
-        <h3 class="text-center">Hi!</h3>
+        <h3 class="text-center">John Smith</h3>
+        <h4 class="text-center">where do you live?</h4>
 
         <div class="container_in_form">
             <div class="field">
@@ -64,11 +65,10 @@
             <div class="clear"></div>
         </div>
     </div>
-    <h3 class="text-center"><br/>next<br/> </h3>
-
-    <p></p>
 
     <div class="container">
+        <h4 class="text-center"><br/>let's add</h4>
+
         <div class="row">
             <div class="col">
                 <ul>
@@ -76,7 +76,7 @@
                         <a><span><input type="image" src="/images/householdexpense.png"
                                 width="190" height="190" alt="Submit"
                                 value="Household Expenses" name="Submit">
-                            </span><small>add household<br/>expenses</small></a>
+                            </span><small>household<br/>expenses</small></a>
                     </li>
                 </ul>
                 <div class="clear"></div>

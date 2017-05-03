@@ -1,54 +1,53 @@
 @extends('indexlayout.header')
 @include('indexlayout.indexnavbar')
 
-<!-- Marketing messaging and featurettes
-================================================== -->
+
 <div class="jumbotron jumbotron_image_rc">
     <div class="container">
         <div class="container_in">
-        <h1>one application for life</h1>
-        <p></p>
-        <h4>r e s t. &nbsp&nbsp&nbsp&nbsp&nbsp r e l a x. &nbsp&nbsp&nbsp&nbsp&nbsp e n j o y.</h4>
-        <br/><br/><br/><br/><br/><br><br/><br/><br/><br/>
+            <h1>one application for life</h1>
+            <p></p>
+            <div class="tagline2">
+                <ul>
+                    <li><a href="#">r e s t.</a></li>
+                    <li><a href="#">r e l a x.</a></li>
+                    <li><a href="#">e n j o y.</a></li>
+                </ul>
+            </div>
 
-        <form class="form-horizontal" method="get" action="/application/estimatecreditscore">
-            {{ csrf_field() }}
+            <form class="form-horizontal" method="get" action="/application/estimatecreditscore">
+                {{ csrf_field() }}
+                <div class="form-group row">
+                    <div class="zipcode">
+                        <div class="zipcode_input_block" id="locationField">
+                            <input type="text" id="autocomplete" value="" class="input_zipcode" autofocus
+                                   placeholder="enter your zip code here"
+                                   onFocus="geolocate()" required>
+                            <span class="clear"></span>
 
-            <div class="form-group row">
-                <div class="zipcode">
-                    <div class="zipcode_input_block" id="locationField">
-                        <input type="text" id="autocomplete" value="" class="input_zipcode" autofocus
-                               placeholder="enter your zip code here to get started"
-                               onFocus="geolocate()" required>
-                        <span class="clear"></span>
+                            <span class="zipcode_btn">
+                                <button class="zipcode_btn_in" type="Submit"
+                                        value="Zip Code" name="Submit">
+                                    <i class="fa fa-arrow-right fa-2x" aria-hidden="true"></i>
+                                </button>
+                            </span>
+                        </div>
                     </div>
-
-                    <span class="zipcode_btn">
-                    <button class="zipcode_btn" type="Submit"
-                            value="Zip Code" name="Submit">
-                        <i class="fa fa-arrow-right fa-2x" aria-hidden="true"></i>
-                    </button>
-                </span>
-
-                </div>
-
-
-            </div><!-- /input-group -->
-        </form>
-    </div>
+                </div><!-- /input-group -->
+            </form>
+        </div>
     </div>
 </div>
 
-<br/><br/><br/>
+<br/><br/>
 
 <div class="container marketing">
     <div class="row">
         <div class="col-lg-4 text-center">
             <h3>one application</h3>
-            <p>one application for all lenders<br/>&nbsp</p>
+            <p>for all lenders<br/>&nbsp<br/>&nbsp<br/></p>
             <img src="/images/oneapplication.png"
                  alt="Generic placeholder image" width="140" height="140">
-            <br/><br/>
         </div>
 
         <div class="col-lg-4 text-center">
@@ -56,7 +55,6 @@
             <p>apply anytime, anywhere<br/>&nbsp</p>
             <img src="/images/hasslefree.png"
                  alt="Generic placeholder image" width="140" height="140">
-            <br/><br/>
         </div>
 
         <div class="col-lg-4 text-center">
@@ -69,16 +67,14 @@
         </div>
     </div>
 </div>
-<br/><br/>
 
 <!-- START THE FEATURETTES -->
 <div class="block_overlay">
     <hr class="featurette-divider">
-    <br/><br/>
     <div class="container">
         <div class="row">
             <div class="col-md-7">
-                <h2>platform that connects consumers and lenders...<span class="text-muted">seamlessly!</span>
+                <h2>platform that matches consumers and lenders...<span class="text-muted">seamlessly!</span>
                 </h2><br/>
 
                 <h5><i class="fa fa-check-circle-o fa-2x" style="color: #293E6A"></i>
@@ -95,11 +91,15 @@
 
             <div class="col-md-5">
                 <img class="featurette-image img-fluid mx-auto"
-                     src="/images/homepage_share.png"  alt="Generic placeholder image">
+                     src="/images/homepage_share_v2.png">
+                <!--<div class="image_homepage_share"></div>-->
             </div>
+
+
         </div>
     </div>
 </div>
+
 
 <br><br><br>
 <div class="container">
@@ -210,9 +210,10 @@
         </div>
     </div>
 </div>
-    <!--<hr class="featurette-divider">-->
+<!--<hr class="featurette-divider">-->
 
-    <!-- /END THE FEATURETTES -->
+<!-- /END THE FEATURETTES -->
+
 
 @include('common.googleautocomplete')
 @include('common.footer')
@@ -225,3 +226,4 @@
         $(this).addClass('selected');
     });
 </script>
+

@@ -14,19 +14,20 @@
         <h3 class="text-center">loan amount</h3>
         <p></p><br/>
         <section class="container_block_in text-center">
+            <div class="container_in_form">
+                <span class="clear"></span>
 
-            <span class="clear"></span>
+                <div class="container_block_in text-center">
+                   <div id="slider-vertical1" style="width:605px;">
+                        <span class="min">$0</span>
+                        <span class="max">$2,000,000</span>
+                        <div class="clear"></div>
+                    </div>
 
-            <div class="container_block_in text-center">
-               <div id="slider-vertical1" style="width:605px;">
-                    <span class="min">$0</span>
-                    <span class="max">$2,000,000</span>
-                    <div class="clear"></div>
+                    <input type="text" id="amount1" value="0" hidden="hidden">
                 </div>
-
-                <input type="text" id="amount1" value="0" hidden="hidden">
+                <div class="clear"></div>
             </div>
-            <div class="clear"></div>
         </section>
 
         </div>

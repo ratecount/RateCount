@@ -2,9 +2,9 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
-        <!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!--<meta name="description" content="">
         <meta name="author" content="">
         <link rel="icon" href="../../favicon.ico">-->
 
@@ -17,6 +17,7 @@
         <link rel="stylesheet" href="/css/index.style.css" type="text/css" media="all">
         <link rel="stylesheet" type="text/css" href="/css/jquery-ui.css">
         <link rel="stylesheet" type="text/css" href="/css/customInput.css">
+        <link rel="stylesheet" type="text/css" href="/css/responsive.css">
 
         <script type="text/javascript" src="/js/jquery_c.js"></script>
         <script type="text/javascript" src="/js/jquery-1.11.2.min.js"></script>
@@ -29,7 +30,8 @@
         <script type="text/javascript" src="/js/bootstrap.js"></script>
         <script type="text/javascript" src="/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="/js/bootstrap-select.js"></script>
-
+        <script type='text/javascript' src='/js/dynamicpage.js'></script>
+        <script type='text/javascript' src='/js/modernizr.js'></script>
     </head>
 
   

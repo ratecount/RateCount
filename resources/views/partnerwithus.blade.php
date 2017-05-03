@@ -6,10 +6,16 @@
 <div class="jumbotron jumbotron_image_partner_rc">
     <div class="container">
         <div class="container_in">
-            <h1>be part of the moment, come join us</h1>
+            <h1>come, sit and join us</h1>
             <p></p>
-            <h4>r e s t. &nbsp&nbsp&nbsp&nbsp&nbsp r e l a x. &nbsp&nbsp&nbsp&nbsp&nbsp e n j o y.</h4>
-            <br/><br/><br/><br/><br/><br><br/><br/><br/><br/>
+            <div class="tagline2">
+                <ul>
+                    <li><a href="#">r e s t.</a></li>
+                    <li><a href="#">r e l a x.</a></li>
+                    <li><a href="#">e n j o y.</a></li>
+                </ul>
+            </div>
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
             <form class="form-horizontal">
                 {{ csrf_field() }}
@@ -30,7 +36,7 @@
                     </button>
                 </span>-->
 
-                </div><!-- /input-group -->
+                <!--</div><!-- /input-group -->
             </form>
         </div>
     </div>
@@ -41,27 +47,26 @@
 <div class="container marketing">
     <div class="row">
         <div class="col-lg-4 text-center">
-            <h3>Header 1</h3>
-            <p>Subheader 1<br/>&nbsp</p>
+            <h3>marketplace</h3>
+            <p>expand your services<br/>&nbsp</p>
             <img src="/images/oneapplication.png"
                  alt="Generic placeholder image" width="140" height="140">
             <br/><br/>
         </div>
 
         <div class="col-lg-4 text-center">
-            <h3>Header 2</h3>
-            <p>Subheader 2<br/>&nbsp</p>
+            <h3>user experience</h3>
+            <p>automation and digital<br/>&nbsp</p>
             <img src="/images/hasslefree.png"
                  alt="Generic placeholder image" width="140" height="140">
             <br/><br/>
         </div>
 
         <div class="col-lg-4 text-center">
-            <h3>Header 3</h3>
-            <p>Subheader 3<br/>&nbsp</p>
+            <h3>technology</h3>
+            <p>mobile-first experience<br/>&nbsp</p>
             <img src="/images/privacy.png"
                  alt="Generic placeholder image" width="140" height="140">
-            <br/><br/>
             <!--<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>-->
         </div>
     </div>
@@ -75,7 +80,7 @@
     <div class="container">
         <div class="row featurette">
             <div class="col-md-7">
-                <h2>platform that connects consumers and lenders...<span class="text-muted">seamlessly!</span>
+                <h2>platform that matches consumers and lenders...<span class="text-muted">seamlessly!</span>
                 </h2><br/>
 
                 <h5><i class="fa fa-check-circle-o fa-2x" style="color: #293E6A"></i>
@@ -92,7 +97,7 @@
 
             <div class="col-md-5">
                 <img class="featurette-image img-fluid mx-auto"
-                     src="/images/homepage_share.png" width="500" height="500" alt="Generic placeholder image">
+                     src="/images/homepage_share_v2.png" alt="Generic placeholder image">
             </div>
         </div>
     </div>
