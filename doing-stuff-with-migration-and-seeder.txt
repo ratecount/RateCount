@@ -1,0 +1,29 @@
+19973  sudo a2enmod rewrite 
+19976  sudo vim /etc/hosts
+19977  ping eli.ratecount.com
+19991  sudo service apache2 stop
+19992  sudo service apache2 start
+19993  w3m http://eli.ratecount.com
+19997  vim config/app.php
+20000  vim database.php
+20002  vim database/migrations/2014_10_12_000000_create_users_table.php 
+20003  vim database/migrations/2014_10_12_100000_create_password_resets_table.php
+
+20004  mysql -uroot -proot
+MariaDB [(none)]> create database dev;
+MariaDB [(none)]> create database dev;
+MariaDB [(none)]> CREATE USER 'dev'@'localhost' IDENTIFIED BY 'dev';
+MariaDB [(none)]> GRANT ALL PRIVILEGES ON dev.* TO 'dev'@'localhost' WITH GRANT OPTION;
+MariaDB [(none)]> FLUSH PRIVILEGES;
+
+20005  mysql -udev -pdev
+
+20008  vim .env # set db to dev,dev,dev
+
+20009  php artisan migrate
+
+20010  vim database/seeds/DatabaseSeeder.php 
+20012  vim database/seeds/UserTableSeeder.php
+20014  composer update
+20015  composer dump-autoload
+20016  php artisan db:seed
