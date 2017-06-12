@@ -177,3 +177,6 @@ Route::post('/application/addproperty','EmploymentsController@create');
     Route::post('/application/otherexpense','PropertiesController@create');
     Route::post('/application/financedeclaration','PropertiesController@create');
 //POST PROPERTY ENDS
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
