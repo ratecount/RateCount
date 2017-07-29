@@ -51,6 +51,8 @@ class RegisterController extends Controller
             'name' => 'required|max:255',
             'email' => 'required|email|max:255|unique:users',
             'password' => 'required|min:6|confirmed',
+            'country_code' => 'required',
+            'phone' => 'required',
         ]);
     }
 
@@ -67,5 +69,12 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
         ]);
+    }
+
+    protected function registered(Request $request, $user)
+    {
+        $user->country_code = $request->country_code;
+        $user->phone = $request->phone;
+        $user->save();
     }
 }

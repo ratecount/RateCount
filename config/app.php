@@ -103,7 +103,7 @@ return [
     |
     */
 
-    'key' => env('APP_KEY'),
+    'key' => env('APP_KEY', 'base64:fkt2WuMcXeYjAbScG067JhZQHGNiQC2TgMP35zjPR+A='),
 
     'cipher' => 'AES-256-CBC',
 

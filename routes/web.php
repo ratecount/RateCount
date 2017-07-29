@@ -110,3 +110,14 @@ Route::post('/application/employmentw2income', 'EmploymentIncomesController@crea
 Route::post('/application/otherincomesource', 'OtherIncomeSourcesController@create');
 
 Route::post('/application/otherincomesourcep2','OtherIncomeSourcesController@create');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
